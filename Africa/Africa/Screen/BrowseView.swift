@@ -9,18 +9,25 @@ import SwiftUI
 
 struct BrowseView: View {
     // MARK:  properties
+    let animals : [Animal] = Bundle.main.decode(file: "animals.json")
     
     // MARK:  body
     var body: some View {
         NavigationView {
-            VStack {
-                CoverImageView()
-                    .frame( height: 300)
-                Spacer()
-             
+            ScrollView {
+                VStack {
+                    CoverImageView()
+                        .frame( height: 300)
+                    Spacer()
+                    ForEach(animals) { item in
+                        Divider()
+                        AnimalListItemView(animal: item)
+                    }
+                 
+                }
+                .navigationBarTitleDisplayMode(.large)
+                .navigationTitle(Text("Africa"))
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle(Text("Browse"))
         }
     }
 }
