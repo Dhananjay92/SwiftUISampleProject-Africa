@@ -20,8 +20,10 @@ struct BrowseView: View {
                         .frame( height: 300)
                     Spacer()
                     ForEach(animals) { item in
-                        Divider()
-                        AnimalListItemView(animal: item)
+                        NavigationLink(destination: AnimalDetailView(animal: item)) {
+                            Divider()
+                            AnimalListItemView(animal: item)
+                        }
                     }
                  
                 }
