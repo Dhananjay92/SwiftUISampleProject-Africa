@@ -32,6 +32,8 @@
 		460C06182769172F00A98C24 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C06172769172F00A98C24 /* CoverImageModel.swift */; };
 		460C061B2769187C00A98C24 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460C061A2769187C00A98C24 /* CodableBundleExtension.swift */; };
 		46A5FA5D276A615A008A592B /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5FA5C276A615A008A592B /* VideoPlayerHelper.swift */; };
+		46A5FA5F276A67E7008A592B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5FA5E276A67E7008A592B /* LocationModel.swift */; };
+		46BCCA43276A95710035F0A0 /* MapAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCCA42276A95710035F0A0 /* MapAnotationView.swift */; };
 		46BEC7E327692B44008AD353 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BEC7E227692B44008AD353 /* covers.json */; };
 		46BEC7E527692BC5008AD353 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BEC7E427692BC5008AD353 /* videos.json */; };
 		46BEC7E727692BEA008AD353 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BEC7E627692BEA008AD353 /* locations.json */; };
@@ -74,6 +76,8 @@
 		460C06172769172F00A98C24 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		460C061A2769187C00A98C24 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		46A5FA5C276A615A008A592B /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		46A5FA5E276A67E7008A592B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		46BCCA42276A95710035F0A0 /* MapAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnotationView.swift; sourceTree = "<group>"; };
 		46BEC7E227692B44008AD353 /* covers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
 		46BEC7E427692BC5008AD353 /* videos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
 		46BEC7E627692BEA008AD353 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 				46F52D4E276959E2000DF420 /* ExternalWebLinkView.swift */,
 				46060469276A299000100C94 /* VideoListItem.swift */,
 				4606046B276A364600100C94 /* VideoPlayerView.swift */,
+				46BCCA42276A95710035F0A0 /* MapAnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				460C06172769172F00A98C24 /* CoverImageModel.swift */,
 				46BEC7EC27693395008AD353 /* AnimalModel.swift */,
 				46060467276A290200100C94 /* VideoModel.swift */,
+				46A5FA5E276A67E7008A592B /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				460C060E27690A0F00A98C24 /* MapView.swift in Sources */,
 				46F52D4B27695151000DF420 /* InsetFactView.swift in Sources */,
 				460C061527690E2100A98C24 /* CoverImageView.swift in Sources */,
+				46BCCA43276A95710035F0A0 /* MapAnotationView.swift in Sources */,
 				460C06182769172F00A98C24 /* CoverImageModel.swift in Sources */,
 				46F52D42276948DB000DF420 /* AnimalDetailView.swift in Sources */,
 				46F52D4727694DD5000DF420 /* InsetGaleryView.swift in Sources */,
@@ -324,6 +331,7 @@
 				460C061327690A4600A98C24 /* BaseView.swift in Sources */,
 				46060468276A290200100C94 /* VideoModel.swift in Sources */,
 				460C060C276909C900A98C24 /* VideoListView.swift in Sources */,
+				46A5FA5F276A67E7008A592B /* LocationModel.swift in Sources */,
 				460C061027690A2300A98C24 /* GalleryView.swift in Sources */,
 				4606046A276A299000100C94 /* VideoListItem.swift in Sources */,
 				460C061B2769187C00A98C24 /* CodableBundleExtension.swift in Sources */,
