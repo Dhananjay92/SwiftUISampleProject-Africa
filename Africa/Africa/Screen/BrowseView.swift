@@ -14,24 +14,26 @@ struct BrowseView: View {
     // MARK:  body
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack {
-                    CoverImageView()
-                        .frame( height: 300)
-                    Spacer()
-                    ForEach(animals) { item in
-                        NavigationLink(destination: AnimalDetailView(animal: item)) {
-                            Divider()
-                            AnimalListItemView(animal: item)
-                        }
-                    }
-                 
+         ScrollView {
+            VStack {
+             CoverImageView()
+                .frame( height: 300)
+                Spacer()
+                ForEach(animals) { item in
+                NavigationLink(destination: AnimalDetailView(animal: item)) {
+                Divider()
+                AnimalListItemView(animal: item)
+                        
+                
                 }
-                .navigationBarTitleDisplayMode(.large)
-                .navigationTitle(Text("Africa"))
-            }
         }
+                 
     }
+   .navigationBarTitleDisplayMode(.large)
+    .navigationTitle(Text("Africa"))
+   }
+  }
+ }
 }
 
 
