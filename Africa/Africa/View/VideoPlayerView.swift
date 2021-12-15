@@ -22,20 +22,13 @@ struct VideoPlayerView: View {
             VideoPlayer(player:playVideo(filename: videoSelected, fileFormat: "mp4"))
             .overlay(
             Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 50, height: 50)
-                .padding(.top,6)
-                .padding(.horizontal,6)
+                .imageModifier1()
+        
             , alignment: .topLeading
-            
-            
             )
-            
         }
-        .navigationTitle(videoTitle)
-        .navigationBarTitleDisplayMode(.inline)
-        .tint(.accentColor)
+        .vstackModifier1(videoTitle: videoTitle)
+
         
     }
 }
@@ -50,5 +43,30 @@ struct VideoPlayerView_Previews: PreviewProvider {
             VideoPlayerView(videoSelected: "lion", videoTitle: "Lion")
                 .previewLayout(.sizeThatFits)
         }
+    }
+}
+
+
+extension Image {
+    
+    
+    fileprivate func imageModifier1() -> some View {
+        self
+            .resizable()
+            .scaledToFit()
+            .frame(width: 50, height: 50)
+            .padding(.top,6)
+            .padding(.horizontal,6)
+    }
+}
+
+extension VStack {
+    
+    
+    fileprivate func vstackModifier1(videoTitle:String) -> some View {
+        self
+            .navigationTitle(videoTitle)
+            .navigationBarTitleDisplayMode(.inline)
+            .tint(.accentColor)
     }
 }

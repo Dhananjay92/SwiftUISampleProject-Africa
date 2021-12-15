@@ -23,9 +23,6 @@ struct MapView: View {
     let locations : [NationalParkLocation] = Bundle.main.decode(file: "locations.json")
     
     
-    
-    
-    
         
     // MARK:  body
     var body: some View {
@@ -42,13 +39,11 @@ struct MapView: View {
                         buildLatitudeValue()
                         Divider()
                         buildLongitudeValue()
-                        
-                    }
+                        }
                 }
                 .hstackModifier1()
-                
+            }
         }
-    }
     
     
     fileprivate func buildLongitudeValue() -> some View {

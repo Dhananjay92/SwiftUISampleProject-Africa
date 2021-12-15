@@ -28,14 +28,13 @@ struct AnimalDetailView: View {
                     //HEADLINE
                     Text(animal.headline)
                         .textModifier2()
-
+                    
                     // GALLERY
                     Group {
                         HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
                         InsetGaleryView(animal: animal)
                     }
                     .padding(.horizontal)
-               
                     // FACTS
                     Group {
                         HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
@@ -47,8 +46,8 @@ struct AnimalDetailView: View {
                     Group {
                         HeadingView(headingImage: "info.circle", headingText: "All about \(animal.name)")
                         Text(animal.description)
-                            .multilineTextAlignment(.leading)
-                            .layoutPriority(1)
+                            .textModifier3()
+
                     }
                     .padding(.horizontal)
                     //MAP
@@ -57,10 +56,6 @@ struct AnimalDetailView: View {
                         InsetMapView()
                     }
                     .padding(.horizontal)
-                    
-                    
-                    
-                    
                     //LINK
                     
                     Group {
@@ -115,6 +110,13 @@ extension Text {
             .multilineTextAlignment(.leading)
             .foregroundColor(.accentColor)
             .padding(.horizontal)
+    }
+    
+    
+    fileprivate func textModifier3() -> some View {
+        self
+            .multilineTextAlignment(.leading)
+            .layoutPriority(1)
     }
 }
 
