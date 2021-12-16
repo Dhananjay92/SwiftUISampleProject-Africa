@@ -36,6 +36,7 @@
 		46AE6883276B496E00D5066C /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE6882276B496E00D5066C /* AnimalGridItemView.swift */; };
 		46AE6889276B77BB00D5066C /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46AE6888276B77BB00D5066C /* Stickers.xcassets */; };
 		46AE688E276B77BB00D5066C /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46AE6886276B77BA00D5066C /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46AE6893276B7AB800D5066C /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE6892276B7AB800D5066C /* CreditsView.swift */; };
 		46BCCA43276A95710035F0A0 /* MapAnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCCA42276A95710035F0A0 /* MapAnotationView.swift */; };
 		46BCCA45276AA2F30035F0A0 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BCCA44276AA2F30035F0A0 /* MotionAnimationView.swift */; };
 		46BEC7E327692B44008AD353 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 46BEC7E227692B44008AD353 /* covers.json */; };
@@ -109,6 +110,7 @@
 		46AE6886276B77BA00D5066C /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		46AE6888276B77BB00D5066C /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		46AE688A276B77BB00D5066C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46AE6892276B7AB800D5066C /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		46BCCA42276A95710035F0A0 /* MapAnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnotationView.swift; sourceTree = "<group>"; };
 		46BCCA44276AA2F30035F0A0 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		46BEC7E227692B44008AD353 /* covers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				46BCCA42276A95710035F0A0 /* MapAnotationView.swift */,
 				46BCCA44276AA2F30035F0A0 /* MotionAnimationView.swift */,
 				46AE6882276B496E00D5066C /* AnimalGridItemView.swift */,
+				46AE6892276B7AB800D5066C /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				46AE6883276B496E00D5066C /* AnimalGridItemView.swift in Sources */,
 				460C061027690A2300A98C24 /* GalleryView.swift in Sources */,
 				4606046A276A299000100C94 /* VideoListItem.swift in Sources */,
+				46AE6893276B7AB800D5066C /* CreditsView.swift in Sources */,
 				460C061B2769187C00A98C24 /* CodableBundleExtension.swift in Sources */,
 				46BCCA45276AA2F30035F0A0 /* MotionAnimationView.swift in Sources */,
 				46F52D4527694C14000DF420 /* HeadingView.swift in Sources */,
